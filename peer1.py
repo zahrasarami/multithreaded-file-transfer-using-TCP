@@ -6,6 +6,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 IP = socket.gethostbyname(socket.gethostname())
+
 PORT = 8011
 ADDR =(IP , PORT)
 FORMAT = "utf-8"
@@ -103,7 +104,7 @@ def handle_client(connSocket , cAddr ) :
         if stat == 'REG' :
             inPas = data[1]
             if inPas == PASSWORLD :
-                serverModeLog("[NEW CONNECTION] {cAddr} connected.")
+                serverModeLog(f"[NEW CONNECTION] {cAddr} connected.")
                 
                 sendData = STAT.CONNECT.name + '|' + "[SECCESSFUL REGISTIRATION]"
                 validReg = True
