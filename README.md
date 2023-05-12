@@ -20,7 +20,18 @@ It uses 2 parallel thread for its communication :
 git clone 
 ```
 ## Usage
-1- run `peer.py` in linux terminal .
+1- set 'PORT' and 'DATA_PATH' varieble in code .
+
+2-update `activenodes.txt` with your active peers .
+
+3- run `peer.py` in linux terminal .
 ```bash
 python3 peer.py 
 ```
+## Options
+LIST: List all the files from the server
+UPLOAD : Upload a file to the server
+DOWNLOAD: Download a file from the server
+DELETE filename: Delete a file from the server
+LOGOUT: Disconnect from the server
+HELP: List all the commands
